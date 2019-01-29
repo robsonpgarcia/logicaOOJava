@@ -1,0 +1,6 @@
+package br.com.treinaweb.calculadora.classes;
+
+public class Multiplicacao extends CalculoMatematico {
+	
+
+}

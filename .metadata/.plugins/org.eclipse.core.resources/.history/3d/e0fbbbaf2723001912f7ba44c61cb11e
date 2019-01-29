@@ -1,0 +1,6 @@
+package br.com.treinaweb.calculadora.classes;
+
+public class Subtracao extends CalculoMatematico {
+	
+
+}

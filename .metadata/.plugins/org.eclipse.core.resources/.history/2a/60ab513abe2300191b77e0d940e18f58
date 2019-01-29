@@ -1,0 +1,12 @@
+package br.com.estudo.javaoo.app;
+
+public class Programa {
+
+	// Entry Point
+	public static void main(String[] args) { // String[] args parametros que vem quando invoca, exemplo prompt
+		
+		
+
+	}
+
+}

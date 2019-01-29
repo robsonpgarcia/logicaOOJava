@@ -1,0 +1,32 @@
+package br.com.consultorio.app;
+
+import br.com.consultorio.classes.Dentista;
+import br.com.consultorio.classes.Paciente;
+import br.com.consultorio.classes.Pessoa;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		//String nome, String sobrenome, int codigo, String idade, 
+		// String sexo, Integer telefone, String endereco
+		
+		Pessoa paciente = new Paciente("Roberto", "da Silva", 123, 34, "M", "11 9 9877-2211", "R. Augustino Cobra");
+		Pessoa dentista = new Dentista("Dr. Dente", "da Silva", "Cirurgiao", 
+				123123, true);
+		
+		paciente.marcar("25/01/2019", "10:00");
+		paciente.remarcar("26/01/2019", "11:00");
+		paciente.cancelar();
+		paciente.marcar("27/01/2019", "10:00");
+		
+		
+
+		dentista.marcar("10/10/2019", "10:00");
+		dentista.remarcar("11/10/2019", "11:00");
+		dentista.cancelar();
+		dentista.marcar("12/10/2019", "12:00");
+		
+	}
+
+}

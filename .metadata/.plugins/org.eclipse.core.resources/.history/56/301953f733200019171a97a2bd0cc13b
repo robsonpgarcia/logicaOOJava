@@ -1,0 +1,9 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+// cachorro é um animal
+public class Cachorro extends Animal {
+	public Cachorro(String nome) {
+		super(nome);
+	}
+	
+}

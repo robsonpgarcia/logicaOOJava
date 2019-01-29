@@ -1,0 +1,77 @@
+package br.com.estudo.javaoo.classes;
+
+public class Veiculo {
+
+	/*
+	 * Pilares da OO
+	 * 1 ENCAPSULAMENTO
+	 * Os atributos nao devem ser acessados diretamente, para OO deve-se utilizar o encapsulamento
+	 * encapsulamento: esconder de classes externas coisas que elas nao deveriam ter acesso
+	 * todos os atributos dedem ser alterados e ter os valores recuperados atraves dos metodos acessores,
+	 * metodos acessores fazem meio de campo entre classe externa e os atributos internos
+	 * metodo acessor get: permite ler um atributo
+	 * metodo acessor set: permite escrever em um atributo
+	 * conversao: get + Nome = getNome e set + Nome = setNome
+	 * Metodos acessores por convensao ficam abaixo dos atributos
+	 * 
+	 * POJO: padrao de codificacao, permite que crie classes com atributos privados e tenham acesso pelos metodos acessores
+	 * 
+	 * Dentro do diagrama UML ja esta subtendido que os metodos get e set ja existem para cada atributo
+	 * e nao sao representados no diagrama
+	 * 
+	 * Uso melhor do encapsulamento
+	 * 
+	 */
+	
+	// public: atributo de visibilidade que permite que uma classe externa acesse o atributo
+	// private: atributo de visibilidade que permite que uma classe externa nao acesso o atributo diretamente, apenas com um metodo acessor
+	
+	private String nome;
+	private String marca;
+	private String chassi;
+	private int quantidadeRodas;
+	private float quantidadeCombustivel; // numero quebrado 32 bits
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public String getChassi() {
+		return chassi;
+	}
+
+	public void setChassi(String chassi) {
+		this.chassi = chassi;
+	}
+
+	public int getQuantidadeRodas() {
+		return quantidadeRodas;
+	}
+
+	public void setQuantidadeRodas(int quantidadeRodas) {
+		this.quantidadeRodas = quantidadeRodas;
+	}
+
+	public void ligar() {
+		System.out.println("O veiculo ligou!");
+	}
+	
+	public void desligar() {
+		System.out.println("O veiculo desligou!");
+	}
+	
+	
+	
+}

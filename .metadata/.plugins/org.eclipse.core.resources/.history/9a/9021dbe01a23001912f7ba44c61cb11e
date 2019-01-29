@@ -1,0 +1,6 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+public class Zoologico {
+	private String nome;
+	
+}

@@ -1,0 +1,18 @@
+package br.com.treinaweb.calculadora.classes;
+
+public class Adicao extends CalculoMatematico {
+
+	public Adicao(int num1, int num2) {
+		super(num1, num2);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	protected int doCalcular() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+
+}

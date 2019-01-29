@@ -1,0 +1,25 @@
+package br.com.consultorio.classes;
+
+public class Paciente {
+	/*
+ ___________________________
+ |		Paciente 			|
+ ----------------------------
+ |	codigo: int				|
+ |	nome: String			|
+ |	sobrenome: String		|
+ |	idade: String			|
+ |	sexo: String			|
+ |	telefone: Integer		|
+ |	endereco: String		|
+ |__________________________|
+ |	atender(): void			|
+ |	marcar(): void			|
+ |	remarcar(): void		|
+ |	cancelar(): void		|
+ |	isDisponivel(): Boolean	|
+ |__________________________|
+ */
+	
+	
+}

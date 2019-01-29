@@ -1,0 +1,13 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+import java.util.List;
+
+public class Zoologico {
+	private String nome;
+	// composicao, zoologico para existir precisa ter animais dentro dele,
+	// zoologico depende conceitualmente de animais para existir, eh composicao
+	private List<Animal> animais;
+	// lista de animal eh um estado interno, faz parte, nao pode colocar get set paras lista, 
+	// senao expoe para fora do programa a lista
+	
+}

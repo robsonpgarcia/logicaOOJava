@@ -1,0 +1,6 @@
+package br.com.exercicios.conta.interfaces;
+
+public interface ContaCorrente {
+	public void sacar();
+	public void depositar();
+}

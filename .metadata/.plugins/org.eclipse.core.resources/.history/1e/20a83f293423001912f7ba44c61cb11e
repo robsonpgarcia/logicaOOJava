@@ -1,0 +1,8 @@
+package br.com.exercicios.conta.classes;
+import br.com.exercicios.conta.interfaces.IContaCorrente;;
+
+public class ContaCorrente implements IContaCorrente {
+
+	
+	
+}

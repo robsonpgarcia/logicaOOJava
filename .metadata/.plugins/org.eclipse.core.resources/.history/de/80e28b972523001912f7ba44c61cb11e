@@ -1,0 +1,19 @@
+package br.com.treinaweb.calculadora.classes;
+
+import br.com.treinaweb.calculadora.interfaces.CalculadorMatematico;
+
+public abstract class CalculoMatematico implements CalculadorMatematico {
+
+	@Override
+	public boolean validar() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int calcular() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

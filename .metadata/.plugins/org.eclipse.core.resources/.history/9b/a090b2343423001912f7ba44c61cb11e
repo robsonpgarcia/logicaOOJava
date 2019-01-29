@@ -1,0 +1,5 @@
+package br.com.exercicios.conta.classes;
+
+public class ContaCorrenteSimples extends ContaCorrente {
+
+}

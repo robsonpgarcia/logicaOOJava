@@ -1,0 +1,29 @@
+package br.com.consultorio.classes;
+
+/*
+ ___________________________
+ |		Dentista 			|
+ ----------------------------
+ |	nome: String			|
+ |	sobrenome: String		|
+ |	especialidade: String	|
+ |	CRM: String				|
+ |	ativo: Boolean			|
+ ____________________________
+ |	atender(): void			|
+ |	marcar(): void			|
+ |	remarcar(): void		|
+ |	cancelar(): void		|
+ |	isDisponivel(): Boolean	|
+ |__________________________|
+ 
+ 
+ */
+
+public class Dentista {
+	private String nome;
+	private String sobrenome;
+	private String especialidade;
+	private String CRM;
+	private Boolean ativo;
+}

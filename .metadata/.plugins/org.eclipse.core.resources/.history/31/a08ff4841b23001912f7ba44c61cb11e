@@ -1,0 +1,11 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+import java.util.List;
+
+public class Zoologico {
+	private String nome;
+	// composicao, zoologico para existir precisa ter animais dentro dele,
+	// zoologico depende conceitualmente de animais para existir, eh composicao
+	private List<Animal> animais;
+	
+}

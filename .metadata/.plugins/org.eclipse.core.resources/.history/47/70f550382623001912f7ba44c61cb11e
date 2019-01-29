@@ -1,0 +1,27 @@
+package br.com.treinaweb.calculadora.classes;
+
+import br.com.treinaweb.calculadora.interfaces.CalculadorMatematico;
+
+// classe generica
+public abstract class CalculoMatematico implements CalculadorMatematico {
+
+	private int numero1;
+	private int numero2;
+	
+	public CalculoMatematico(int num1, int num2) {
+		this.numero1 = num1;
+		this.numero2 = num2;
+	}
+	
+	@Override
+	public boolean validar() {
+		return numero1 >=0 && numero2 >= 0;
+	}
+
+	@Override
+	public int calcular() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

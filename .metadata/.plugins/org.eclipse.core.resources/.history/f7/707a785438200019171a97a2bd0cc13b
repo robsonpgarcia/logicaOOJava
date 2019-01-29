@@ -1,0 +1,81 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+// Animal é uma base para outros tipos de animais, na rua nao vejo um animal e sim um tipo de animal, cachorro
+// por isso que conceitualmente a classe Animal deve ser uma classe Abstrata
+// existe no mundo real, mas nao pode criar animais pelo mundo, nao pode criar instancias da classe Animal
+// nao pode instanciar de maneira direta
+// temos animais pelo mundo, mas nao temos animais de maneira direta
+
+public abstract class Animal {
+	
+	//encapsulamento: nao expor tudo o que pode ser acessado fora da classe
+	// sua visibilidade eh definida com os metodos private e public
+	// propriedades, caractereisticas ou atributos
+	private String nome;
+	private String especie;
+	private int idade;
+	private Boolean estaVivo;
+	// nao faz sentido expor atributo para fora, pois Programa nao pode setar esse estado, nao é programa que 
+	// deve saber se animal esta vivo ou nao
+	// nao é interessante expor todos sets e gets
+	// interessante seria apenas um get
+	
+	// metodos acessores: estruturas para acessar membros encapsulados
+	public String getNome() {
+		return this.nome;
+	}
+	
+	public void setNome(String nome) {
+		// this qualificador utilizado para falar que o atributo nome recebe o nome que veio como parametro
+		this.nome = nome;
+	}
+	
+	public String getEspecie() {
+		return this.especie;
+	}
+	
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+	
+	public int getIdade() {
+		return this.idade;
+	}
+	
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	
+	// encapsulando utilizando a tecnica de esconder atributos que nao devem ser visiveis, acessados de fora
+	public Boolean estaVivo() {
+		return estaVivo;
+	}
+	
+	// sobrecarga, um metodo com o mesmo nome mas com assinaturas diferentes
+	public Animal() {
+		
+	}
+	
+	// assinatura de um metodo é o tipo de retorno, seu nome e tipos recebidos como parametros
+	public Animal(String nome) {
+		this.nome = nome;
+	}
+	// construtor colocado depois dos metodos acessores
+	public Animal(String nome, int idade, String especie) {
+		this.nome = nome;
+		this.idade = idade;
+		this.especie = especie;
+	}
+	
+	// comportamentos, acoes: metodos
+	// metodo abstrato naop tem implementacao e forca classe que herda implementar o metodo
+	// metodo abstrao so pode estar em uma classe abstrata
+	// todo animal emite um barulho, por isso nao foi retirado o metodo dela
+	// senao seria descaracterizado o animal
+	public abstract void emitirBarulho();
+	
+	public Boolean ehAdulto() {
+		return idade >= 1;
+	}
+	
+}

@@ -1,0 +1,33 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+//veterinario nao eh composto por animais, ele atende animais, agregacao
+//agregacao: veterinario atende animal, veterinario existe sem atender animais do zoologico
+public class Veterinario {
+	private String nome;
+	private List<Animal> animais;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public Veterinario() {
+		animais = new ArrayList<Animal>();
+		
+	}
+	
+	public void atenderAnimal(Animal animalASerAtendido) {
+		animais.add(animalASerAtendido);
+	}
+	
+	public void deixarDeAtenderAnimal(int indiceAnimal) {
+		animais.remove(indiceAnimal);
+	}
+
+}

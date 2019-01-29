@@ -1,0 +1,82 @@
+package br.com.treinaweb.zoologico.app;
+
+import br.com.treinamentoweb.zoologico.classes.Animal;
+import br.com.treinamentoweb.zoologico.classes.Cachorro;
+import br.com.treinamentoweb.zoologico.classes.Gato;
+import br.com.treinamentoweb.zoologico.classes.Zoologico;
+
+public class Programa {
+
+	// Entry Point
+	public static void main(String[] args) {
+
+		// cachorro instancia da classe animal, criado a partir da classe animal
+		// possui todas as caracteristicas e acoes da classe Animal
+		
+		// Animal tipo da variavel
+		// cachorro: objeto
+		Animal cachorro = new Cachorro("Toto", 2);
+		
+		// classe mais abstrata consegue subsituir com uma concretizacao (Gato)
+		// Gato esta dentro de Animal
+		// Todo Gato eh um Animal
+		// Principio da substuicao de Liscob LSP ou Polimorfismo
+		// objeto de um tipo consegue se comportar como um outro objeto
+		
+		System.out.println("Ola, seu animal é: " + cachorro.getEspecie() +
+				", o nome do animal é: " + cachorro.getNome() +
+				" e ele tem " + cachorro.getIdade() + " ano(s)");
+		
+		
+		if(cachorro.ehAdulto()){
+			System.out.println("Animal adulto");
+		} else {
+			System.out.println("Animal nao é adulto");
+		}
+		
+		
+		Gato gato = new Gato("Ze", 1);
+		
+		System.out.println("Ola, seu animal é: " + gato.getEspecie() +
+				", o nome do animal é: " + gato.getNome() +
+				" e ele tem " + gato.getIdade() + " ano(s)");
+		
+		if(gato.ehAdulto()){
+			System.out.println("Animal adulto");
+		} else {
+			System.out.println("Animal nao é adulto");
+		}
+		
+				
+		
+		System.out.println("===========================================");
+		System.out.println("Barulho do cachorro: ");
+		cachorro.emitirBarulho();
+		System.out.println("===========================================");
+		System.out.println("Barulho do gato: ");
+		gato.emitirBarulho();
+		System.out.println("********************************************");
+		cachorro.morrer();
+		System.out.println("Barulho do cachorro: ");
+		cachorro.emitirBarulho();
+		System.out.println("********************************************");
+		gato.morrer();
+		System.out.println("Barulho do gato: ");
+		gato.emitirBarulho();
+		
+		
+		Zoologico zoo = new Zoologico();
+		zoo.setNome("Zoo TreinaWeb");
+		System.out.println("Animais do zoologico: " + zoo.getNome());
+		zoo.adicionarAnimal(cachorro);
+		zoo.adicionarAnimal(gato);
+		zoo.listarAnimais();
+		zoo.removerAnimal(0);
+		zoo.listarAnimais();
+		
+		
+
+
+	}
+
+}

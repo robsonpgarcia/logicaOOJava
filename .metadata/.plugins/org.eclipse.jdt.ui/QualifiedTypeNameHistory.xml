@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="br.com.consultorio.classes.Paciente"/>
+<fullyQualifiedTypeName name="br.com.consultorio.classes.Dentista"/>
+<fullyQualifiedTypeName name="br.com.treinamentoweb.zoologico.classes.Cachorro"/>
+<fullyQualifiedTypeName name="br.com.treinamentoweb.zoologico.classes.Gato"/>
+<fullyQualifiedTypeName name="br.com.treinamentoweb.zoologico.classes.Animavel"/>
+<fullyQualifiedTypeName name="br.com.treinamentoweb.zoologico.classes.Animal"/>
+<fullyQualifiedTypeName name="br.com.treinamentoweb.zoologico.classes.Zoologico"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="br.com.treinamentoweb.zoologico.classes.Veterinario"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="br.com.treinaweb.calculadora.classes.Adicao"/>
+<fullyQualifiedTypeName name="br.com.treinaweb.calculadora.classes.Subtracao"/>
+<fullyQualifiedTypeName name="br.com.treinaweb.calculadora.classes.Multiplicacao"/>
+<fullyQualifiedTypeName name="br.com.treinaweb.calculadora.classes.Divisao"/>
+<fullyQualifiedTypeName name="br.com.treinaweb.calculadora.fabricas.FabricaCalculosMatematicos"/>
+<fullyQualifiedTypeName name="br.com.treinaweb.calculadora.interfaces.CalculadorMatematico"/>
+<fullyQualifiedTypeName name="br.com.treinaweb.calculadora.classes.CalculoMatematico"/>
+<fullyQualifiedTypeName name="br.com.treinaweb.calculadora.classes.Potenciacao"/>
+<fullyQualifiedTypeName name="br.com.exercicios.conta.interfaces.ContaCorrente"/>
+<fullyQualifiedTypeName name="br.com.exercicios.conta.interfaces.IContaCorrente"/>
+<fullyQualifiedTypeName name="br.com.exercicios.conta.classes.ContaCorrente"/>
+<fullyQualifiedTypeName name="br.com.estudo.javaoo.classes.Veiculo"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,19 @@
+package br.com.consultorio.app;
+
+import br.com.consultorio.classes.Dentista;
+import br.com.consultorio.classes.Paciente;
+import br.com.consultorio.classes.Pessoa;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Pessoa paciente = new Paciente("Roberto", "da Silva", 123, 
+				34, "M", 12341234, 
+				"R. Augustino Cobra");
+		Pessoa dentista = new Dentista(nome, sobrenome, especialidade, 
+				CRM, ativo);
+
+	}
+
+}

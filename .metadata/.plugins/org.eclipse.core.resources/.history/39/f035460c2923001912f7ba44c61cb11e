@@ -1,0 +1,15 @@
+package br.com.treinaweb.calculadora.fabricas;
+
+import br.com.treinaweb.calculadora.classes.Adicao;
+
+// design pattern, classe para criar objetos
+public class FabricaCalculosMatematicos {
+
+	public CalculadorMatematico criarCalculadorint numero1, in numero2, String calculo){
+		if(calculo.equals("+")) {
+			return new Adicao(num1, num2);
+		}
+		
+	}
+	
+}

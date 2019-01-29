@@ -1,0 +1,10 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+import java.util.List;
+
+public class Zoologico {
+	private String nome;
+	// composicao
+	private List<Animal> animais;
+	
+}

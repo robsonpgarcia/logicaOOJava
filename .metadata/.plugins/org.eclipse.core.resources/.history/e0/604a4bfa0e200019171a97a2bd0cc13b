@@ -1,0 +1,47 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+public class Animal {
+	
+	//encapsulamento: nao expor tudo o que pode ser acessado fora da classe
+	// sua visibilidade eh definida com os metodos private e public
+	// propriedades, caractereisticas ou atributos
+	private String nome;
+	private String especie;
+	private int idade;
+	
+	// metodos acessores: estruturas para acessar membros encapsulados
+	public String getNome() {
+		return this.nome;
+	}
+	
+	public void setNome(String nome) {
+		// this qualificador utilizado para falar que o atributo nome recebe o nome que veio como parametro
+		this.nome = nome;
+	}
+	
+	public String getEspecie() {
+		return this.especie;
+	}
+	
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+	
+	public int getIdade() {
+		return this.idade;
+	}
+	
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	
+	// comportamentos, acoes: metodos
+	public void emitirBarulho() {
+		System.out.println("Barulho do animal");
+	}
+	
+	public Boolean isAdulto() {
+		return idade >= 1;
+	}
+	
+}

@@ -1,0 +1,7 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+//veterinario nao eh composto por animais, ele atende animais, agregacao
+
+public class Veterinario {
+
+}

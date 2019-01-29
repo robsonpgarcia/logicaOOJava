@@ -1,0 +1,9 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+public interface Animavel {
+	
+	Boolean ehAdulto();
+	void emitirBarulho();
+	void morrer();
+	
+}

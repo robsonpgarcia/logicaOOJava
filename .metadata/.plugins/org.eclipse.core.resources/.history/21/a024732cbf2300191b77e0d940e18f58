@@ -1,0 +1,22 @@
+package br.com.estudo.javaoo.app;
+
+import br.com.estudo.javaoo.classes.Veiculo;
+
+public class Programa {
+
+	// Entry Point
+	public static void main(String[] args) { // String[] args parametros que vem quando invoca, exemplo prompt
+		
+		// classe so define um formato que o veiculo pode ter, nao pode utilizar diretamente a forma
+		
+		// objetos sao estruturas que assumem a forma da classe que o definiu
+		// tipo  do objeto que sera criado
+		// corsa: objeto  criado a partir da classe veiculo
+		//new indica a invocacao de um construtor, JVM reserva espaco disponivel para guardar objeto
+		//construtor, indica que o espaco de memoria deve ser utilizado para guardar o objeto
+		Veiculo corsa = new Veiculo();
+		
+
+	}
+
+}

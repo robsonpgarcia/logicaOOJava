@@ -1,0 +1,30 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+// cachorro é um animal
+// Animal é classe mae, superclasse de cachorro
+public class Cachorro extends Animal {
+	public Cachorro(String nome) {
+		super(nome);
+	}
+	
+	public Cachorro(String nome, int idade, String especie) {
+		super(nome, idade, especie);
+	}
+	
+	public Cachorro(String nome, int idade) {
+		super(nome, idade, "Cachorro");
+	}
+	
+	@Override
+	public void emitirBarulho() {
+		System.out.println("Au au");
+	}
+	
+	// nao pode chamar atributo estaVivo porque ele nao esta publico
+	// para nao violar encapsulamento
+	// metodo emitir barulho na classe Animal é abstrato, entao nao pode fazer if esta vivo nela
+	// para nao deixar publico, a solucao ideal sera deixar metodo visivel para classe 
+	// cachorro e gato, sem deixar exposto para outras classes
+	
+	
+}

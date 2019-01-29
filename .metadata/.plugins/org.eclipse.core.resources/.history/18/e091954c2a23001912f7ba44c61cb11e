@@ -1,0 +1,20 @@
+package br.com.treinaweb.calculadora.app;
+
+import br.com.treinaweb.calculadora.fabricas.FabricaCalculosMatematicos;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		String calculo = "+";
+		int numero1 = 2;
+		int numero2 = 2;
+		
+		FabricaCalculosMatematicos fabrica = new FabricaCalculosMatematicos();
+		
+		fabrica.criarCalculador(numero1, numero2, calculo);
+		
+
+	}
+
+}

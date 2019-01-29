@@ -1,0 +1,16 @@
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		int idade = 30;
+		
+		
+		while(idade < 100) {
+			System.out.println(idade);
+			idade = idade + 1;
+		}
+
+	}
+
+}

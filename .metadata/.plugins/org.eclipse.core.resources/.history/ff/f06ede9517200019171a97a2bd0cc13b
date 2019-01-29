@@ -1,0 +1,19 @@
+package br.com.treinamentoweb.zoologico.classes;
+
+public class Cachorro extends Animal {
+
+	private String nome;
+	private String especie;
+	private int idade;
+	
+	public Cachorro() {
+		
+	}
+	public Cachorro(String nome, int idade, String especie) {
+		this.nome = nome;
+		this.idade = idade;
+		this.especie = especie;
+		
+	}
+	
+}
