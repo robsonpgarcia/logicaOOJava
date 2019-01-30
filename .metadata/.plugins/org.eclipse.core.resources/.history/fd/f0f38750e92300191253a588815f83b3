@@ -1,0 +1,7 @@
+package br.com.estudo.javaoo.excecoes;
+
+public class ChassiInvalidoException extends Exception {
+	
+	
+
+}
